@@ -1,6 +1,20 @@
 # city-suggestions
 List of cities in the US and Canada which match query
 
+# API-documentation- see swagger file city-suggestions.yaml
+
+# To run app
+npm start
+
+# To hit endpoint
+http://localhost:3000/suggestions?q=query-string&&latitude=latitude&&longitude=longitude
+
+# To run tests
+npm run test
+
+# To run coverage report
+npm run cover
+
 ##Design
 The requirements can be met by implementing a single route. The query is made against a data store. The following
 restrictions apply on the query:
