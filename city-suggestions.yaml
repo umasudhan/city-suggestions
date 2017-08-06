@@ -1,0 +1,33 @@
+swagger: '2.0'
+info:
+  title: city auto commplete
+  description: city suggestions
+  version: '2.0'
+host: 'localhost:3000'
+schemes:
+  - http
+produces:
+  - application/json
+paths:
+  /weather:
+    get:
+      summary: List of cities in the US and Canada which match query
+      parameters:
+        - name: q
+          in: query
+          description: Query string
+          type: string
+          required: true
+        - name: latitude
+          in: query
+          description: latitude
+          type: string
+          required: false
+        - name: longitude
+          in: query
+          description: longitude
+          type: string
+          required: false
+      responses:
+        '200':
+          description: List of ranked cities matching query
