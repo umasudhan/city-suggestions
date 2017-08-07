@@ -9,7 +9,7 @@ schemes:
 produces:
   - application/json
 paths:
-  /weather:
+  /suggestions:
     get:
       summary: List of cities in the US and Canada which match query
       parameters:
