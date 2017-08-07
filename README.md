@@ -23,4 +23,6 @@ restrictions apply on the query:
 
 ### Data Store
 The data store can be a local database; a call to a http endpoint (http://download.geonames.org/export/dump/readme.txt)
-or a local file with all info. It shouldnt matter what we use as long as it is well isolated.
+or a local file with all info. It shouldnt matter what we use as long as it is well isolated. For the current requirements,
+a database will be overkill- we can subset the data to a local file containing only fields of interest whihc can then be
+queried in memory.
